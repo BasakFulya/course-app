@@ -1,9 +1,9 @@
-export default function ContactPage()
+export default function FaqPage()
 {
     return (
       <>
-      <div id="contact">
-        <h1>Contact</h1>
+      <div id="faq">
+        <h1>Frequency Asked Question</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Ducimus, 
