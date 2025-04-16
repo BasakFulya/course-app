@@ -1,4 +1,4 @@
-import { NavLink , Outlet} from "react-router";
+import { Link, Outlet} from "react-router";
 export default function HelpLayout()
 {
     return (
@@ -13,12 +13,9 @@ export default function HelpLayout()
                      quos laudantium molestias!
                 </p>
                      <nav>
-              <NavLink to="/" end>
-              Home
-              </NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/courses">Courses</NavLink>
-              <NavLink to="help">Help</NavLink>  
+              
+              <Link to="contact">Contact</Link>  
+              <Link to="faq">FAQ</Link>  
             </nav>
             <Outlet/>
         </div>
