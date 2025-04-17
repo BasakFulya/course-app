@@ -4,6 +4,7 @@ export default function MainLayout()
     return (
         <div id="main-layout">
             <h1>Main Layout</h1>
+            <header>
             <nav>
                 <NavLink to="/" end>
                     Home
@@ -12,6 +13,7 @@ export default function MainLayout()
                 <NavLink to="courses">Courses</NavLink>
                 <NavLink to="help">Help</NavLink>
             </nav>
+            </header>
             <main>
                 <Outlet/>
             </main>

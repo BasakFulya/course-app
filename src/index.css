@@ -22,3 +22,8 @@ body {
 p {
     margin: 20px 0;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
