@@ -26,4 +26,50 @@ p {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+header nav a {
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+nav a.active {
+    background-color: var(--primary);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+main {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+#help-layout nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#help-layout nav a {
+    border: 2px solid #fff;
+    padding: 6px;
+    border-radius: 4px;
+    margin: 20px 0;
+    text-decoration: none;
+    
+}
+
+#faq .question {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin: 15px 0;
+}   
+
