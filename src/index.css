@@ -73,3 +73,27 @@ main {
     margin: 15px 0;
 }   
 
+form {
+    margin-bottom: 5px;
+}
+
+form input, form label, form textarea {
+    display: block;
+}
+
+form input, form label, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 4px;
+    width: 300px;
+    color: #0000;
+}
+
+form button {
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    background: var(--primary);
+    cursor: pointer;
+}

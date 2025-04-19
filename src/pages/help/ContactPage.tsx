@@ -3,12 +3,18 @@ export default function ContactPage()
     return (
       <>
       <div id="contact">
-        <h1>Contact</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Ducimus, 
-            accusamus! Aperiam libero molestiae voluptate tempore dolore ducimus minima.
-        </p>
+        <h2>Contact</h2>
+        <form>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label htmlFor="message">Message:</label>
+             <textarea name="message"></textarea>
+          </div>
+           <button type="submit">Submit</button>
+        </form>
       </div>
       </>
     );
