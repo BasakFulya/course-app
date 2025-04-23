@@ -8,9 +8,9 @@ import {createBrowserRouter,
          RouterProvider, 
        } from "react-router";
 
-import HomePage from "./pages/Home";
-import AboutPage from "./pages/About";
-import CoursesPage from "./pages/Courses";
+import HomePage from "./pages/help/Home";
+import AboutPage from "./pages/help/About";
+import CoursesPage, { coursesLoader } from "./pages/help/Courses";
 import MainLayout from "./layouts/MainLayout";
 import ContactPage from "./pages/help/ContactPage";
 import FaqPage from "./pages/help/FaqPage";
@@ -31,7 +31,7 @@ const router = createBrowserRouter(
         { index: true , element:<HomePage /> },
         { path: "home", element:<HomePage /> },
         { path: "about", element:<AboutPage /> },
-        { path: "courses", element:<CoursesPage /> },
+        { path: "courses", element:<CoursesPage />, loader: coursesLoader },
         {
           path: "help",
           element: <HelpLayout />,
