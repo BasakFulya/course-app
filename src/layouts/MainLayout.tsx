@@ -1,6 +1,7 @@
-import {NavLink, Outlet } from "react-router";
-export default function MainLayout()
-{
+import {NavLink, Outlet, useNavigate } from "react-router";
+export default function MainLayout() {
+    const navigation = useNavigate();
+    
     return (
         <div id="main-layout">
             <header className="container">
@@ -15,6 +16,11 @@ export default function MainLayout()
             </nav>
             </header>
             <main className="container">
+                {navigation.state == "loading" && (
+                <span>
+                    <i className="fa-solid fa-spinner"></i>Loading...
+                </span>
+                )}
                 <Outlet/>
             </main>
         </div>
