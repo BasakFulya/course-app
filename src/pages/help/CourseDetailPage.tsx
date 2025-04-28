@@ -1,10 +1,10 @@
-import { useParams } from "react-router";
-
 export default function CourseDetailPage() {
-    const { courseid,title} = useParams();
-    return (
-    <h1>
-      Course Details {courseid} {title}
-    </h1>
-  );
-} 
+    return  <h1>Course Details </h1>;
+}
+    
+
+  
+export async function courseDetailsLoader({ params }) { 
+  const { courseid } = params;
+  console.log(courseid);
+};
