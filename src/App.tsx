@@ -6,14 +6,14 @@ import {createBrowserRouter,
 
 import HomePage from "./pages/help/Home";
 import AboutPage from "./pages/help/About";
-import CoursesPage, { coursesLoader } from "./pages/help/Courses";
+import CoursesPage, { coursesLoader } from "./pages/course/Courses";
 import MainLayout from "./layouts/MainLayout";
 import ContactPage from "./pages/help/ContactPage";
 import FaqPage from "./pages/help/FaqPage";
 import HelpLayout from "./layouts/HelpLayout";
 import CourseDetailPage, { 
   courseDetailsLoader,
-} from "./pages/help/CourseDetailPage";
+} from "./pages/course/CourseDetailPage";
 
 const router = createBrowserRouter(
   [
