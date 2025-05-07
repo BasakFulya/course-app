@@ -1,7 +1,3 @@
-//   /=> <Home />
-//   /about => <About />
-//   /courses => <Courses />
-
 import {createBrowserRouter, 
          //createRoutesFromElements,
          //Route, 
@@ -15,13 +11,9 @@ import MainLayout from "./layouts/MainLayout";
 import ContactPage from "./pages/help/ContactPage";
 import FaqPage from "./pages/help/FaqPage";
 import HelpLayout from "./layouts/HelpLayout";
-import CourseDetailPage from "./pages/help/CourseDetailPage";
-
-// localhost:3000/
-// localhost:3000/home
-// localhost:3000/about
-// localhost:3000/courses
-
+import CourseDetailPage, { 
+  courseDetailsLoader,
+} from "./pages/help/CourseDetailPage";
 
 const router = createBrowserRouter(
   [
