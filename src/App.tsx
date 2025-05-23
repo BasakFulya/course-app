@@ -4,16 +4,16 @@ import {createBrowserRouter,
          RouterProvider, 
        } from "react-router";
 
-import HomePage from "./pages/help/Home";
-import AboutPage from "./pages/help/About";
+import HomePage from "./pages/Home";
+import AboutPage from "./pages/About";
 import CoursesPage, { coursesLoader } from "./pages/course/Courses";
 import MainLayout from "./layouts/MainLayout";
-import ContactPage from "./pages/help/ContactPage";
-import FaqPage from "./pages/help/FaqPage";
+import ContactPage from "./pages/help/Contact";
+import FaqPage from "./pages/help/Faq";
 import HelpLayout from "./layouts/HelpLayout";
 import CourseDetailPage, { 
   courseDetailsLoader,
-} from "./pages/course/CourseDetailPage";
+} from "./pages/course/CourseDetail";
 import CourseLayout from "./layouts/CourseLayout";
 
 const router = createBrowserRouter(
