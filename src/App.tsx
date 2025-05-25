@@ -1,19 +1,15 @@
-import {createBrowserRouter, 
-         //createRoutesFromElements,
-         //Route, 
-         RouterProvider, 
-       } from "react-router";
+import {createBrowserRouter, RouterProvider } from "react-router";
 
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
-import CoursesPage, { coursesLoader } from "./pages/course/Courses";
+import CoursesPage, { coursesLoader } from "./pages/Courses";
 import MainLayout from "./layouts/MainLayout";
 import ContactPage from "./pages/help/Contact";
 import FaqPage from "./pages/help/Faq";
 import HelpLayout from "./layouts/HelpLayout";
 import CourseDetailPage, { 
   courseDetailsLoader,
-} from "./pages/course/CourseDetail";
+} from "./pages/CourseDetail";
 import CourseLayout from "./layouts/CourseLayout";
 
 const router = createBrowserRouter(
