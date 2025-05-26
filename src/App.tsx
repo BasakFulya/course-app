@@ -2,15 +2,18 @@ import {createBrowserRouter, RouterProvider } from "react-router";
 
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
-import CoursesPage, { coursesLoader } from "./pages/Courses";
+import CoursesPage, { coursesLoader } from "./pages/course/Courses";
 import MainLayout from "./layouts/MainLayout";
 import ContactPage from "./pages/help/Contact";
 import FaqPage from "./pages/help/Faq";
 import HelpLayout from "./layouts/HelpLayout";
 import CourseDetailPage, { 
   courseDetailsLoader,
-} from "./pages/CourseDetail";
+} from "./pages/course/CourseDetail";
 import CourseLayout from "./layouts/CourseLayout";
+import CourseCreate from "./pages/course/CourseCreate";
+import CourseCreatePage from "./pages/course/CourseCreate";
+import CourseEditPage from "./pages/course/CourseEdit";
 
 const router = createBrowserRouter(
   [
@@ -32,6 +35,8 @@ const router = createBrowserRouter(
               loader: courseDetailsLoader,
 
             },
+            { path: "create",element: <CourseCreatePage />},
+            { path: ":courseid/edit",element: <CourseEditPage />}
           ],
         },
         {

@@ -1,4 +1,4 @@
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
 export default function CourseLayout()
 {
     return (
@@ -6,11 +6,8 @@ export default function CourseLayout()
             
             <h1>Course List</h1>
         
-                <p>Lorem ipsum dolor sit amet
-                     consectetur adipisicing elit. 
-                     Illum est nesciunt eaque modi,
-                      minima voluptas dolorum. Asperiores
-                     quos laudantium molestias!
+                <p>
+                    <Link to={"create"}> New Course </Link>
                 </p>
                 
             <Outlet/>
