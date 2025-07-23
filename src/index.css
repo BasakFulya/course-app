@@ -124,6 +124,7 @@ form button {
     background: var(--primary);
     cursor: pointer;
     text-decoration: none;
+    margin-right: 5px;
 
 }
 
@@ -139,3 +140,4 @@ form button {
     gap: 25px;
     margin-top: 20px;
 }
+

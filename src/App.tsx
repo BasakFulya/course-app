@@ -9,7 +9,7 @@ import FaqPage from "./pages/help/Faq";
 import HelpLayout from "./layouts/HelpLayout";
 import CourseDetailPage, { 
   courseDetailsLoader,
-} from "./pages/course/CourseDetail";
+} from "./pages/course/CourseDetails";
 import CourseLayout from "./layouts/CourseLayout";
 import CourseCreate from "./pages/course/CourseCreate";
 import CourseCreatePage from "./pages/course/CourseCreate";
